@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<div id="noprint"> <!--botão de imprimir ou baixar--> 
+    <a href="" onclick="window.print();return false"><button type="button" class="btn btn-danger" title="Imprimir">Imprimir ou Baixar</button></a>
+    </div> 
+
+<body background="lightblue">
+   
+    <div id="tabela" class="col-12">
+
+        <table id="certificado">
+           
+            <tr>
+                <th colspan="5">
+                  <strong> WIKI CURSOS </strong> 
+                </th>
+
+                
+            </tr>
+            <th class="cert">
+                Certificado
+              </th>
+            <tr>
+                
+            </tr>
+            
+            <tr>
+                <th>Certificamos para os devidos fins que</th>
+            </tr>
+
+            <tr>
+                <th id="nome">NOME DO ALUNO  </th>
+            </tr>
+
+            <tr>
+                <th>CPF: <span id="cpf"></span></th>
+            </tr>
+
+            <tr>
+                <th> <em>  Concluiu com êxito o curso de Word Básico (12 HORAS) na data <span id="data"></span>, oferecido pela Wiki Cursos. </em> </th>
+            </tr>
+            
+        </table>
+    </div>
+
+    <style> /*sumir com o botão quando for imprimir*/
+        @media print { 
+        #noprint { display:none; } 
+        body { background: #fff; }
+        }
+        </style>
+
+</body>
+
+<script src="./style.js"></script>
+<script> editCert() </script>
+<link rel="stylesheet" href="style.css">
+
+</html>
